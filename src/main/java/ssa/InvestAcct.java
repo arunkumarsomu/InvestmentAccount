@@ -13,12 +13,13 @@ public class InvestAcct extends Stock{
 		 this.id = id;
 		 this.name = name;
 		 this.cashBalance = cash;
+		 
 	 }
 	 public boolean buyShares(String symb, String stkName, String date, double amt, double noOfStk){
 		 if ((amt * noOfStk) > this.cashBalance){
 			 
 			 System.out.println(" cash bal and no of stk :"+ this.cashBalance + " " +  noOfStk);
-			 System.out.println(" You dont have enough cash available");
+			 System.out.println(" You dont have enough cash available ");
 			 return false;
 		 }
 		 else
